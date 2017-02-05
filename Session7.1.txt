@@ -1,0 +1,56 @@
+1. Why Map-reduce program is needed in Pig Programming?
+-------------------------------------------------------
+Pig is an application that works on top of MapReduce. Pig is written in Java and compiles Pig Latin scripts into to MapReduce jobs. Pig works on huge volume of data . Apache Pig offers more optimization and control on the data flow.
+
+
+2. What are advantages of pig over MapReduce?
+---------------------------------------------
+The advantages of Pig over Mapreduce;
+a) Pig offers many built in functions and operations
+b) Few lines of code as opposed to MapReduce
+c) Knowledge of Java is not important
+d) Has capacity to perform computations that MapReduce cannot
+e) Programmers have flexibility to think of a solution to a problem rather than break the problem into Map and Reduce          functions
+f) Working with multiple datasets, joins and filters is difficult in Mapreduce but easy in Pig
+
+3. What is pig engine and what is its importance?
+--------------------------------------------------
+Pig Engine converts pig scripts to MapReduce. Executes Pig scripts into series of mapreduce jobs for parallel processing.
+
+
+4. What are the modes of Pig execution?
+---------------------------------------
+a) Local Mode: pig -x local
+b) MapReduce Mode: pig -x mapreduce
+c) Interactive Mode: Grunt Shell
+d) Embedded Mode: Running Pig Scripts from Java Application
+
+
+5. What is grunt shell in Pig?
+------------------------------ 
+Grunt shell is an interactive shell for executing Pig commands.
+
+
+6. What are the features of Pig Latin language?
+------------------------------------------------
+A Pig Latin statement is an operator that takes a relation as input and produces another relation as output. Pig Latin statements can span multiple lines and must end with a semi-colon. Pig Latin statements are generally organized in the following manner:
+
+A LOAD statement reads data from the file system.
+A series of "transformation" statements process the data.
+A STORE statement writes output to the file system; or, a DUMP statement displays output to the screen.
+
+
+7. Is Pig latin commands case sensitive? 
+----------------------------------------
+key words are case insensitive
+Relation Names , Field names and UDF names are case sensitive.
+
+8. What is a data flow language?
+--------------------------------
+In a dataflow language, a stream of data is passed from instruction to instruction, as opposed to instruction in Control flow language.
+
+Dataflow programming languages are ones that focus on the state of the program and cause operations to occur according to any change in the state. Dataflow programming languages are inherently parallel, because the operations rely on inputs that when met will cause the operation to execute. This means unlike a normal program where one operation is followed by the next operation, in a dataflow program operations will execute as long as the inputs are met and thus there is no set order.
+
+Often dataflow programming languages use a large hashtable where the keys are the data of the program and the values of the table are pointers to the operations of the program. This makes multicore programs easier to create in a dataflow programming language, since each core would only need the hashtable to work.
+
+A common example of a dataflow programming language is a spread sheet program which has columns of data that are affected by other columns of data. Should the data in one column change, other data in the other columns will probably change with it. Although the spread sheet program is the most common example of a dataflow programming language, most of them tend to be graphical languages.
